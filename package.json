@@ -1,0 +1,17 @@
+{
+  "name": "custom-pendrives-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SEO-first, performance-focused landing page for custom branded pendrives.",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --directory public",
+    "validate": "node scripts/validate.mjs"
+  },
+  "keywords": [
+    "custom pendrives",
+    "branded usb drives",
+    "corporate gifts",
+    "bulk pendrives"
+  ],
+  "license": "UNLICENSED"
+}
