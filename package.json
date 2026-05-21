@@ -1,11 +1,24 @@
 {
-  "name": "custom-pendrives-landing-page",
+  "name": "custom-pendrives-nextjs-landing-page",
   "version": "1.0.0",
   "private": true,
-  "description": "SEO-first, performance-focused landing page for custom branded pendrives.",
+  "description": "SEO-first, performance-focused Next.js landing page for custom branded pendrives.",
   "scripts": {
-    "start": "python3 -m http.server 4173 --directory public",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "validate": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
   },
   "keywords": [
     "custom pendrives",
