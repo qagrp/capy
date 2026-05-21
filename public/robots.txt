@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourbrand.example/sitemap.xml
+Sitemap: https://www.yourbrand.com/sitemap.xml

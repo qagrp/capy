@@ -11,7 +11,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#000000" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="canonical" href="https://yourbrand.example/" />
+    <link rel="canonical" href="https://www.yourbrand.com/" />
     <link rel="preload" as="image" href="/assets/custom-pendrives-hero.webp" fetchpriority="high" />
     <link rel="stylesheet" href="/styles.css" />
     <meta property="og:type" content="website" />
@@ -33,8 +33,8 @@
         "telephone": "+91 98765 43210",
         "email": "hello@yourbrand.com",
         "areaServed": "IN",
-        "url": "https://yourbrand.example/",
-        "image": "https://yourbrand.example/assets/og-custom-pendrives.webp",
+        "url": "https://www.yourbrand.com/",
+        "image": "https://www.yourbrand.com/assets/og-custom-pendrives.webp",
         "makesOffer": {
           "@type": "Offer",
           "itemOffered": {
@@ -79,7 +79,6 @@
             </svg>
             <span><strong>Your Brand</strong><small>Custom Pendrives</small></span>
           </a>
-          <button class="menu-toggle" type="button" aria-label="Open menu">Menu</button>
           <ul class="navlinks">
             <li><a class="is-active" href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -100,9 +99,9 @@
             <h1 id="hero-title">Custom Made<br />Pendrives</h1>
             <div class="rule" aria-hidden="true"></div>
             <p class="hero__tagline">Your Brand. Your Design. Your Story.</p>
-            <p class="hero__text">Premium quality custom pendrives for your business, events, promotions and corporate gifting.</p>
+            <p class="hero__text" id="about">Premium quality custom pendrives for your business, events, promotions and corporate gifting.</p>
 
-            <ul class="feature-grid" aria-label="Product highlights">
+            <ul class="feature-grid" id="products" aria-label="Product highlights">
               <li>
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5Z"/></svg>
                 <strong>Custom Design</strong><span>Your Logo, Your Style</span>
@@ -165,7 +164,7 @@
             </ul>
           </div>
 
-          <form class="quote-form" action="mailto:hello@yourbrand.com" method="post" enctype="text/plain">
+          <form class="quote-form" id="customization" action="mailto:hello@yourbrand.com" method="post" enctype="text/plain">
             <label><span>Full Name</span><input name="full-name" type="text" placeholder="Full Name" autocomplete="name" required /></label>
             <label><span>Email Address</span><input name="email" type="email" placeholder="Email Address" autocomplete="email" required /></label>
             <label><span>Company Name</span><input name="company" type="text" placeholder="Company Name" autocomplete="organization" /></label>
