@@ -10,6 +10,7 @@ const checks = [
   ['canonical url', /rel="canonical"/.test(html)],
   ['structured data', /application\/ld\+json/.test(html)],
   ['Open Graph image', /property="og:image"/.test(html)],
+  ['absolute Open Graph image URL', /property="og:image" content="https:\/\//.test(html)],
   ['responsive viewport', /name="viewport"/.test(html)],
   ['semantic form labels', (html.match(/<label/g) || []).length >= 6],
   ['optimized hero asset under 40KB', statSync('public/assets/custom-pendrives-hero.webp').size < 40_000],
