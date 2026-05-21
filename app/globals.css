@@ -9,7 +9,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   margin: 0;
   color: var(--ink);
@@ -17,6 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 a { color: inherit; text-decoration: none; }
 svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
@@ -119,11 +120,19 @@ h1 { margin: 0; font-size: clamp(44px, 5.5vw, 59px); line-height: 1.03; font-wei
 
 @media (max-width: 640px) {
   .container { width: min(100% - 28px, var(--container)); }
-  .topbar__promise { white-space: normal; text-align: center; }
+  .topbar__contact, .topbar__promise { width: 100%; }
+  .topbar a, .topbar__promise { justify-content: center; white-space: normal; }
+  .topbar__promise { flex-wrap: wrap; text-align: center; }
   .brand strong { font-size: 20px; }
   .brand small { font-size: 13px; }
+  .mainnav__inner { justify-items: center; }
+  .navlinks { gap: 12px 20px; justify-content: center; }
   .hero { min-height: auto; }
-  h1 { font-size: 41px; }
+  .hero__inner { padding-top: 36px; }
+  h1 { font-size: clamp(36px, 10vw, 41px); letter-spacing: .025em; }
+  .hero__tagline { max-width: 320px; font-size: 18px; }
+  .hero__text { max-width: 330px; }
+  .hero__visual img { max-width: 100%; }
   .feature-grid, .quote-benefits, .trustbar__inner, .quote-form, .footer__inner { grid-template-columns: 1fr; width: 100%; }
   .feature-grid li, .trustbar article { border-right: 0; padding-left: 0 !important; }
   .trustbar__inner { gap: 30px; }
